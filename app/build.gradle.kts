@@ -1,0 +1,26 @@
+plugins {
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.example.cctv"
+    compileSdk = 35
+
+    defaultConfig {
+        applicationId = "com.example.cctv"
+        minSdk = 23
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
+    }
+}
+
+dependencies {
+    implementation("androidx.activity:activity-ktx:1.9.2")
+    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.camera:camera-camera2:1.3.4")
+    implementation("androidx.camera:camera-lifecycle:1.3.4")
+    implementation("androidx.camera:camera-core:1.3.4")
+    implementation("org.nanohttpd:nanohttpd:2.3.1")
+}
